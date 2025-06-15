@@ -1,0 +1,465 @@
+Package: libapache2-mod-php5.6
+Source: php5.6
+Version: 5.6.40-81+ubuntu20.04.1+deb.sury.org+1
+Architecture: amd64
+Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
+Installed-Size: 4393
+Depends: libpcre3 (>= 2:8.41), media-types | mime-support, php5.6-cli, php5.6-common (= 5.6.40-81+ubuntu20.04.1+deb.sury.org+1), php5.6-json, php5.6-opcache, tzdata, ucf, apache2-api-20120211, apache2-bin, libc6 (>= 2.29), libssl1.1 (>= 1.1.0), libxml2 (>= 2.8.0), zlib1g (>= 1:1.1.4)
+Recommends: apache2
+Suggests: php-pear
+Provides: libapache2-mod-php, phpapi-20131226
+Filename: ./libapache2-mod-php5.6_5.6.40-81+ubuntu20.04.1+deb.sury.org+1_amd64.deb
+Size: 1249304
+MD5sum: 63523c093c47e53a0654048cda9ee489
+SHA1: df3a9b896df66193b8151b7799524978fb410038
+SHA256: 9dce71d53faa8506fe12811ae20c0d3810b89aa19992fd94c4fcfa0ca34530f0
+Section: httpd
+Priority: optional
+Homepage: http://www.php.net/
+Description: server-side, HTML-embedded scripting language (Apache 2 module)
+ This package provides the PHP module for the Apache 2 webserver (as
+ found in the apache2-mpm-prefork package).  Please note that this package
+ ONLY works with Apache's prefork MPM, as it is not compiled thread-safe.
+ .
+ The following extensions are built in: Core date ereg filter hash libxml
+ mhash openssl pcre Reflection session SPL standard zlib.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+ .
+ (Repackaged on Sun, 15 Jun 2025 11:40:30 +0200 by dpkg-repack.)
+
+Package: libpcre3
+Source: pcre3
+Version: 2:8.45-1+ubuntu20.04.1+deb.sury.org+1
+Architecture: amd64
+Maintainer: Perl 5 Compatible Regular Expression Library <pcre3@packages.debian.org>
+Installed-Size: 567
+Depends: libc6 (>= 2.14)
+Filename: ./libpcre3_8.45-1+ubuntu20.04.1+deb.sury.org+1_amd64.deb
+Size: 240500
+MD5sum: 589e23269ec4dd5486e33056d56c74f2
+SHA1: 08cbff831579fb0e3e0502bd9ecbc94e2cd71174
+SHA256: 80d232471b0aba6f11eec278d0b3d30cf87cbc056ae576b9a11acef8e00df3cf
+Section: libs
+Priority: important
+Multi-Arch: same
+Description: Perl 5 Compatible Regular Expression Library - runtime files
+ This is a library of functions to support regular expressions whose syntax
+ and semantics are as close as possible to those of the Perl 5 language.
+ .
+ This package contains the runtime libraries.
+ .
+ (Repackaged on Sun, 15 Jun 2025 11:40:34 +0200 by dpkg-repack.)
+
+Package: libzip4
+Source: libzip
+Version: 1.7.3-1+ubuntu20.04.1+deb.sury.org+2
+Architecture: amd64
+Maintainer: Stefan Schörghofer <amd1212@4md.gr>
+Installed-Size: 145
+Depends: libbz2-1.0, libc6 (>= 2.14), libssl1.1 (>= 1.1.0), zlib1g (>= 1:1.1.4)
+Filename: ./libzip4_1.7.3-1+ubuntu20.04.1+deb.sury.org+2_amd64.deb
+Size: 55196
+MD5sum: b15060e0142c20d4b4cbb03d12ea1fd3
+SHA1: 8fe24f1c46efc6f76c6972c38b7663f4d77ccf65
+SHA256: 52d77e339f94c2aa64eaff3ce10b8ff52ad51b5cbc12f337428ca938fc78e194
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://libzip.org
+Description: library for reading, creating, and modifying zip archives (runtime)
+ libzip is a C library for reading, creating, and modifying zip archives. Files
+ can be added from data buffers, files, or compressed data copied directly from
+ other zip archives. Changes made without closing the archive can be reverted.
+ .
+ This package contains the files necessary for running applications that
+ use the libzip library.
+ .
+ (Repackaged on Sun, 15 Jun 2025 11:40:34 +0200 by dpkg-repack.)
+
+Package: php5.6
+Version: 5.6.40-81+ubuntu20.04.1+deb.sury.org+1
+Architecture: all
+Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
+Installed-Size: 288
+Depends: libapache2-mod-php5.6 | php5.6-fpm | php5.6-cgi, php5.6-common
+Provides: php
+Filename: ./php5.6_5.6.40-81+ubuntu20.04.1+deb.sury.org+1_all.deb
+Size: 271024
+MD5sum: 21dccd8761a429f4267b92ae55c4d284
+SHA1: 1ac6f7681917a10acf17891166872dbdedb0c06b
+SHA256: ecc7f9c359b66bfcd3308183618881896ecf2c2111b9b60a82b89566665fff43
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: server-side, HTML-embedded scripting language (metapackage)
+ This package is a metapackage that, when installed, guarantees that you
+ have at least one of the four server-side versions of the PHP interpreter
+ installed. Removing this package won't remove PHP from your system, however
+ it may remove other packages that depend on this one.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+ .
+ (Repackaged on Sun, 15 Jun 2025 11:40:35 +0200 by dpkg-repack.)
+
+Package: php5.6-cli
+Source: php5.6
+Version: 5.6.40-81+ubuntu20.04.1+deb.sury.org+1
+Architecture: amd64
+Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
+Installed-Size: 4472
+Depends: libedit2 (>= 2.11-20080614-4), libpcre3 (>= 2:8.41), media-types | mime-support, php5.6-common (= 5.6.40-81+ubuntu20.04.1+deb.sury.org+1), php5.6-json, php5.6-opcache, php5.6-readline, tzdata, ucf, libc6 (>= 2.29), libssl1.1 (>= 1.1.0), libxml2 (>= 2.8.0), zlib1g (>= 1:1.1.4)
+Suggests: php-pear
+Provides: php-cli, phpapi-20131226
+Filename: ./php5.6-cli_5.6.40-81+ubuntu20.04.1+deb.sury.org+1_amd64.deb
+Size: 1297188
+MD5sum: 4429dddb4cff1a0327806a030c21ff2c
+SHA1: dba9921848380f21ddaea1a050595dbb74e03aa1
+SHA256: 92fab249ee7e5c2f77c316fe6db580e42480ac0eb5242cc8a10831bddb1b7b69
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: command-line interpreter for the PHP scripting language
+ This package provides the /usr/bin/php5.6 command interpreter, useful for
+ testing PHP scripts from a shell or performing general shell scripting tasks.
+ .
+ The following extensions are built in: Core date ereg filter hash libxml
+ mhash openssl pcntl pcre Reflection session SPL standard zlib.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+ .
+ (Repackaged on Sun, 15 Jun 2025 11:40:35 +0200 by dpkg-repack.)
+
+Package: php5.6-common
+Source: php5.6
+Version: 5.6.40-81+ubuntu20.04.1+deb.sury.org+1
+Architecture: amd64
+Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
+Installed-Size: 4302
+Depends: php-common (>= 1:81~), ucf, libc6 (>= 2.15), libssl1.1 (>= 1.1.0)
+Provides: php-calendar, php-ctype, php-exif, php-fileinfo, php-ftp, php-iconv, php-pdo, php-phar, php-posix, php-shmop, php-sockets, php-sysvmsg, php-sysvsem, php-sysvshm, php-tokenizer, php5.6-calendar, php5.6-ctype, php5.6-exif, php5.6-fileinfo, php5.6-ftp, php5.6-gettext, php5.6-iconv, php5.6-pdo, php5.6-phar, php5.6-posix, php5.6-shmop, php5.6-sockets, php5.6-sysvmsg, php5.6-sysvsem, php5.6-sysvshm, php5.6-tokenizer
+Filename: ./php5.6-common_5.6.40-81+ubuntu20.04.1+deb.sury.org+1_amd64.deb
+Size: 735204
+MD5sum: eea12395f82fed9a77a196a545da721a
+SHA1: d46aef2827393fddd80aa88c2e5be3cde0ed6631
+SHA256: 889a4069846b6ef6ff20f0533d35a6fa17b9985498fdc39ea0855abc240302da
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: documentation, examples and common module for PHP
+ This package provides the documentation, examples and common module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+ .
+ (Repackaged on Sun, 15 Jun 2025 11:40:39 +0200 by dpkg-repack.)
+
+Package: php5.6-curl
+Source: php5.6
+Version: 5.6.40-81+ubuntu20.04.1+deb.sury.org+1
+Architecture: amd64
+Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
+Installed-Size: 120
+Depends: php-common (>= 1:81~), ucf, php5.6-common (= 5.6.40-81+ubuntu20.04.1+deb.sury.org+1), libc6 (>= 2.14), libcurl4 (>= 7.18.0)
+Provides: php-curl
+Filename: ./php5.6-curl_5.6.40-81+ubuntu20.04.1+deb.sury.org+1_amd64.deb
+Size: 27800
+MD5sum: 150040a973620610ab5b4ad1577fada3
+SHA1: 5622a37169f29589cdab94c28da2838dd4727c02
+SHA256: fe1318ca72efc60d15b424fe5a3fd4a19f7317c8f186ba32440a24b4738fdf64
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: CURL module for PHP
+ This package provides the CURL module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+ .
+ (Repackaged on Sun, 15 Jun 2025 11:40:42 +0200 by dpkg-repack.)
+
+Package: php5.6-gd
+Source: php5.6
+Version: 5.6.40-81+ubuntu20.04.1+deb.sury.org+1
+Architecture: amd64
+Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
+Installed-Size: 148
+Depends: php-common (>= 1:81~), ucf, php5.6-common (= 5.6.40-81+ubuntu20.04.1+deb.sury.org+1), libc6 (>= 2.4), libgd3 (>= 2.1.1), libxpm4
+Provides: php-gd
+Filename: ./php5.6-gd_5.6.40-81+ubuntu20.04.1+deb.sury.org+1_amd64.deb
+Size: 29284
+MD5sum: e3e7cdf2a6211cd120cc6d206b3bbba5
+SHA1: 636ff225052f63524c22f2769ec8063b52981b8f
+SHA256: dfbf4ca3da6b3568461d4eb9561145354eba5b7aa7e180cb35968ec98fd62356
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: GD module for PHP
+ This package provides the GD module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+ .
+ (Repackaged on Sun, 15 Jun 2025 11:40:42 +0200 by dpkg-repack.)
+
+Package: php5.6-imap
+Source: php5.6
+Version: 5.6.40-81+ubuntu20.04.1+deb.sury.org+1
+Architecture: amd64
+Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
+Installed-Size: 144
+Depends: php-common (>= 1:81~), ucf, php5.6-common (= 5.6.40-81+ubuntu20.04.1+deb.sury.org+1), libc-client2007e, libc6 (>= 2.14)
+Provides: php-imap
+Filename: ./php5.6-imap_5.6.40-81+ubuntu20.04.1+deb.sury.org+1_amd64.deb
+Size: 33140
+MD5sum: 5141c8323a99b8e1b15dabe0fe499d32
+SHA1: 2eccc751ab14cd3aa138fc051f429234d97d84ce
+SHA256: 54f92271b3a451ad60bba0b884bd70ca4a044ca0d6449e17ca7402ac6d0fa212
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: IMAP module for PHP
+ This package provides the IMAP module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+ .
+ (Repackaged on Sun, 15 Jun 2025 11:40:42 +0200 by dpkg-repack.)
+
+Package: php5.6-json
+Source: php5.6
+Version: 5.6.40-81+ubuntu20.04.1+deb.sury.org+1
+Architecture: amd64
+Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
+Installed-Size: 84
+Depends: php-common (>= 1:81~), ucf, php5.6-common (= 5.6.40-81+ubuntu20.04.1+deb.sury.org+1), libc6 (>= 2.14)
+Provides: php-json
+Filename: ./php5.6-json_5.6.40-81+ubuntu20.04.1+deb.sury.org+1_amd64.deb
+Size: 18136
+MD5sum: a7b752a32c0d9a5a6d9da0473f15eba2
+SHA1: e0a7d40fd84a41e62125f5fd8bcf809f54209451
+SHA256: 8da5a9355c88cf47be476b05981f26dcd6bef7f7e9e8398b3d496d7e295ec224
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: JSON module for PHP
+ This package provides the JSON module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+ .
+ (Repackaged on Sun, 15 Jun 2025 11:40:43 +0200 by dpkg-repack.)
+
+Package: php5.6-ldap
+Source: php5.6
+Version: 5.6.40-81+ubuntu20.04.1+deb.sury.org+1
+Architecture: amd64
+Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
+Installed-Size: 104
+Depends: php-common (>= 1:81~), ucf, php5.6-common (= 5.6.40-81+ubuntu20.04.1+deb.sury.org+1), libc6 (>= 2.4), libldap-2.4-2 (>= 2.4.7)
+Provides: php-ldap
+Filename: ./php5.6-ldap_5.6.40-81+ubuntu20.04.1+deb.sury.org+1_amd64.deb
+Size: 22876
+MD5sum: 2c03d5ec1319942d30978368e2b72d4a
+SHA1: 171d8868f8d604de5172a014063953e9e088b795
+SHA256: 78d9817c56aab9e7dccb73559f9177db4b1f08d16d5fdda108fe1037b1b18bcd
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: LDAP module for PHP
+ This package provides the LDAP module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+ .
+ (Repackaged on Sun, 15 Jun 2025 11:40:43 +0200 by dpkg-repack.)
+
+Package: php5.6-mbstring
+Source: php5.6
+Version: 5.6.40-81+ubuntu20.04.1+deb.sury.org+1
+Architecture: amd64
+Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
+Installed-Size: 1463
+Depends: php-common (>= 1:81~), ucf, php5.6-common (= 5.6.40-81+ubuntu20.04.1+deb.sury.org+1), libc6 (>= 2.14)
+Provides: php-mbstring
+Filename: ./php5.6-mbstring_5.6.40-81+ubuntu20.04.1+deb.sury.org+1_amd64.deb
+Size: 466328
+MD5sum: b63bacc473fa786430a2fb4efd0e5fd7
+SHA1: 5c5c5351baa3e2e366efcb5df510b207196fcda9
+SHA256: eed821a0d254203967c166b90417d148ef6754f5140f3bbbd9cdfb9407cf8ff5
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: MBSTRING module for PHP
+ This package provides the MBSTRING module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+ .
+ (Repackaged on Sun, 15 Jun 2025 11:40:43 +0200 by dpkg-repack.)
+
+Package: php5.6-mcrypt
+Source: php5.6
+Version: 5.6.40-81+ubuntu20.04.1+deb.sury.org+1
+Architecture: amd64
+Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
+Installed-Size: 84
+Depends: php-common (>= 1:81~), ucf, php5.6-common (= 5.6.40-81+ubuntu20.04.1+deb.sury.org+1), libc6 (>= 2.14), libmcrypt4
+Provides: php-mcrypt
+Filename: ./php5.6-mcrypt_5.6.40-81+ubuntu20.04.1+deb.sury.org+1_amd64.deb
+Size: 15828
+MD5sum: 33e3b7033ba693bc96eec22e3960249c
+SHA1: a79a42262c152e95f2d7195d49eee5f019ec3161
+SHA256: a54713295b163b2916040e08c299ebe155bbaf1e9a8157aa11ac1eaa0fc30034
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: libmcrypt module for PHP
+ This package provides the libmcrypt module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+ .
+ (Repackaged on Sun, 15 Jun 2025 11:40:44 +0200 by dpkg-repack.)
+
+Package: php5.6-mysql
+Source: php5.6
+Version: 5.6.40-81+ubuntu20.04.1+deb.sury.org+1
+Architecture: amd64
+Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
+Installed-Size: 555
+Depends: php-common (>= 1:81~), ucf, php5.6-common (= 5.6.40-81+ubuntu20.04.1+deb.sury.org+1), libc6 (>= 2.15)
+Provides: php-mysql, php-mysqli, php-mysqlnd, php-pdo-mysql, php5.6-mysqli, php5.6-mysqlnd, php5.6-pdo-mysql
+Filename: ./php5.6-mysql_5.6.40-81+ubuntu20.04.1+deb.sury.org+1_amd64.deb
+Size: 142512
+MD5sum: e60a1ab22a08c6c8ba0d71d87341bcf5
+SHA1: 1f7cec0ddf01ec4bf05ef516c7d09ec4e625965a
+SHA256: 6b67f16ae3f8d682624ba8a9be3ec711532f6041ac60bbadf9ddd2681d356edd
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: MySQL module for PHP
+ This package provides the MySQL module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+ .
+ (Repackaged on Sun, 15 Jun 2025 11:40:44 +0200 by dpkg-repack.)
+
+Package: php5.6-opcache
+Source: php5.6
+Version: 5.6.40-81+ubuntu20.04.1+deb.sury.org+1
+Architecture: amd64
+Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
+Installed-Size: 192
+Depends: php-common (>= 1:81~), ucf, php5.6-common (= 5.6.40-81+ubuntu20.04.1+deb.sury.org+1), libc6 (>= 2.27)
+Provides: php-opcache
+Filename: ./php5.6-opcache_5.6.40-81+ubuntu20.04.1+deb.sury.org+1_amd64.deb
+Size: 63524
+MD5sum: 068d87fd4863fd64097907658b91a78d
+SHA1: 81032c36a5f173d10b5cf41122c8bf5194b2a7a5
+SHA256: 7a35eee2495bca68f68f122236d0a0e51c1f519a5acdf69182d6cc24942921da
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: Zend OpCache module for PHP
+ This package provides the Zend OpCache module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+ .
+ (Repackaged on Sun, 15 Jun 2025 11:40:45 +0200 by dpkg-repack.)
+
+Package: php5.6-readline
+Source: php5.6
+Version: 5.6.40-81+ubuntu20.04.1+deb.sury.org+1
+Architecture: amd64
+Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
+Installed-Size: 68
+Depends: php-common (>= 1:81~), ucf, php5.6-common (= 5.6.40-81+ubuntu20.04.1+deb.sury.org+1), libc6 (>= 2.14), libedit2 (>= 3.1-20130611-0)
+Provides: php-readline
+Filename: ./php5.6-readline_5.6.40-81+ubuntu20.04.1+deb.sury.org+1_amd64.deb
+Size: 13196
+MD5sum: 792959ec3d7b6004a62988aa5a1c53fc
+SHA1: 38d60da30bb6457bd40647a9643d008a529c90c3
+SHA256: 278367fc400b730e15470f64f152d363b55588804e19f8b5c7a93509716b90e6
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: readline module for PHP
+ This package provides the readline module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+ .
+ (Repackaged on Sun, 15 Jun 2025 11:40:45 +0200 by dpkg-repack.)
+
+Package: php5.6-xml
+Source: php5.6
+Version: 5.6.40-81+ubuntu20.04.1+deb.sury.org+1
+Architecture: amd64
+Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
+Installed-Size: 537
+Depends: php-common (>= 1:81~), ucf, php5.6-common (= 5.6.40-81+ubuntu20.04.1+deb.sury.org+1), libc6 (>= 2.14), libxml2 (>= 2.9.0), libxslt1.1 (>= 1.1.25)
+Breaks: php5.6-xsl (<< 5.6.18+dfsg-5~)
+Replaces: php5.6-xsl (<< 5.6.18+dfsg-5~)
+Provides: php-dom, php-simplexml, php-wddx, php-xml, php-xmlreader, php-xmlwriter, php-xsl, php5.6-dom, php5.6-simplexml, php5.6-wddx, php5.6-xmlreader, php5.6-xmlwriter, php5.6-xsl
+Filename: ./php5.6-xml_5.6.40-81+ubuntu20.04.1+deb.sury.org+1_amd64.deb
+Size: 121048
+MD5sum: 0e3e55344c7ed4ebeb6d8c12d2b8a993
+SHA1: 0f9b0017162b5ea10789d521911f6713902a3fce
+SHA256: 1ee20def0087fb06c9591986d8ff8fcfff91993bf9a745771ece99e308f035c1
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: DOM, SimpleXML, WDDX, XML, and XSL module for PHP
+ This package provides the DOM, SimpleXML, WDDX, XML, and XSL module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+ .
+ (Repackaged on Sun, 15 Jun 2025 11:40:45 +0200 by dpkg-repack.)
+
+Package: php5.6-zip
+Source: php5.6
+Version: 5.6.40-81+ubuntu20.04.1+deb.sury.org+1
+Architecture: amd64
+Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
+Installed-Size: 96
+Depends: php-common (>= 1:81~), ucf, php5.6-common (= 5.6.40-81+ubuntu20.04.1+deb.sury.org+1), libc6 (>= 2.27), libzip4 (>= 0.11.2)
+Provides: php-zip
+Filename: ./php5.6-zip_5.6.40-81+ubuntu20.04.1+deb.sury.org+1_amd64.deb
+Size: 20424
+MD5sum: c20d70a189add1861283439777117378
+SHA1: 9b6d6b07965a3725c5cfe6f35ecad6cf16dd40f5
+SHA256: 62518dd95b210a83138c2d6f1f3c8431a6e61843f0a36318efae4c93d9696fe7
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: Zip module for PHP
+ This package provides the Zip module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+ .
+ (Repackaged on Sun, 15 Jun 2025 11:40:46 +0200 by dpkg-repack.)
+
